@@ -1,0 +1,55 @@
+{
+  "project_info": {
+    "project_number": "401259168188",
+    "firebase_url": "https://problemonute.firebaseio.com",
+    "project_id": "problemonute",
+    "storage_bucket": "problemonute.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:401259168188:android:14b8b9947665bde4",
+        "android_client_info": {
+          "package_name": "com.problemonute.problemonute"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "401259168188-c5tlevvii8pb7mbt13r2iutmbt258gc9.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.problemonute.problemonute",
+            "certificate_hash": "27E70375E5FAA3B752D4018182804D80D4F6F677"
+          }
+        },
+        {
+          "client_id": "401259168188-ospk2kvlej1nvomhtjdrepgl7n9p0bi7.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAtb7obMRiRLZ4k9Z6RwIVWiSv_UJ9WpUY"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 2,
+          "other_platform_oauth_client": [
+            {
+              "client_id": "401259168188-ospk2kvlej1nvomhtjdrepgl7n9p0bi7.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
