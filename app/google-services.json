@@ -15,21 +15,17 @@
       },
       "oauth_client": [
         {
-          "client_id": "401259168188-c5tlevvii8pb7mbt13r2iutmbt258gc9.apps.googleusercontent.com",
+          "client_id": "401259168188-5bnrb2alvbkpg1bjb8lohprfmsc7brru.apps.googleusercontent.com",
           "client_type": 1,
           "android_info": {
             "package_name": "com.problemonute.problemonute",
             "certificate_hash": "27E70375E5FAA3B752D4018182804D80D4F6F677"
           }
-        },
-        {
-          "client_id": "401259168188-ospk2kvlej1nvomhtjdrepgl7n9p0bi7.apps.googleusercontent.com",
-          "client_type": 3
         }
       ],
       "api_key": [
         {
-          "current_key": "AIzaSyAtb7obMRiRLZ4k9Z6RwIVWiSv_UJ9WpUY"
+          "current_key": "AIzaSyABV1eFv2lpvl71fNJTmL4pJWJsUwYMJWE"
         }
       ],
       "services": {
@@ -38,12 +34,7 @@
         },
         "appinvite_service": {
           "status": 2,
-          "other_platform_oauth_client": [
-            {
-              "client_id": "401259168188-ospk2kvlej1nvomhtjdrepgl7n9p0bi7.apps.googleusercontent.com",
-              "client_type": 3
-            }
-          ]
+          "other_platform_oauth_client": []
         },
         "ads_service": {
           "status": 2
