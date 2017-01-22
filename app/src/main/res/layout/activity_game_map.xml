@@ -1,13 +1,24 @@
 <?xml version="1.0" encoding="utf-8"?>
 <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
+    xmlns:mapbox="http://schemas.android.com/apk/res-auto"
     android:id="@+id/activity_game_map"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:paddingBottom="@dimen/activity_vertical_margin"
-    android:paddingLeft="@dimen/activity_horizontal_margin"
-    android:paddingRight="@dimen/activity_horizontal_margin"
-    android:paddingTop="@dimen/activity_vertical_margin"
     tools:context="com.problemonute.problemonute.views.GameMapActivity">
 
+    <com.mapbox.mapboxsdk.maps.MapView
+        android:id="@+id/mapView"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        mapbox:center_latitude="-0.17952"
+        mapbox:center_longitude="-78.50750"
+        mapbox:logo_enabled="false"
+        mapbox:attribution_enabled="false"
+        mapbox:tilt_enabled="false"
+        mapbox:zoom_min="16"
+        mapbox:zoom_max="20"
+        mapbox:style_url="mapbox://styles/hercson/ciy3b2iwi008g2rr0e2nkotoc"
+        mapbox:tilt="100"
+        mapbox:zoom="19"/>
 </RelativeLayout>

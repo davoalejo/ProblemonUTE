@@ -20,10 +20,24 @@ android {
     dataBinding {
         enabled = true
     }
+    compileOptions {
+        sourceCompatibility JavaVersion.VERSION_1_8
+        targetCompatibility JavaVersion.VERSION_1_8
+    }
 }
 
 repositories {
     mavenCentral()
+}
+
+buildscript {
+    repositories {
+        mavenCentral()
+    }
+
+    dependencies {
+        classpath 'me.tatarka:gradle-retrolambda:3.4.0'
+    }
 }
 
 dependencies {
@@ -41,7 +55,11 @@ dependencies {
         transitive=true
     }
     compile 'io.github.kexanie.library:MathView:0.0.6'
+    compile "io.reactivex.rxjava2:rxjava:2.0.4"
+
 }
 
 
 apply plugin: 'com.google.gms.google-services'
+apply plugin: 'me.tatarka.retrolambda'
+

@@ -12,8 +12,8 @@ import android.view.MotionEvent;
 import android.view.View;
 import android.widget.TextView;
 import android.widget.Toast;
-
 import com.google.firebase.database.FirebaseDatabase;
+import android.content.Intent;
 import com.problemonute.problemonute.R;
 import com.problemonute.problemonute.databinding.ActivityProblemBinding;
 import com.problemonute.problemonute.viewmodels.ProblemViewModel;
@@ -35,10 +35,17 @@ public class ProblemActivity extends AppCompatActivity {
     ProblemViewModel answer2;
     ProblemViewModel answer3;
     ProblemViewModel answer4;
+    String message;
+    
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         ActivityProblemBinding binding = DataBindingUtil.setContentView(this,R.layout.activity_problem);
+        
+        Intent intent = getIntent();
+	      message = intent.getStringExtra("KEY_MARKER");
+	      Toast.makeText(this, message, Toast.LENGTH_SHORT).show();
+        
         FirebaseDatabase.getInstance().setPersistenceEnabled(true);
         textViewTime = (TextView) findViewById(R.id.textViewTime);
         answer1View = (MathView) findViewById(R.id.answer1);
@@ -142,6 +149,7 @@ public class ProblemActivity extends AppCompatActivity {
         );
         timer.start();
     }
+    
     @TargetApi(Build.VERSION_CODES.GINGERBREAD)
     @SuppressLint("NewApi")
     public class CounterClass extends CountDownTimer{
@@ -171,5 +179,17 @@ public class ProblemActivity extends AppCompatActivity {
             }
             finish();
         }
+        
+       
+    @Override
+    public void onBackPressed() {
+
+        Intent intent = new Intent();
+//        intent.addFlags(Intent.FLAG_ACTIVITY_REORDER_TO_FRONT);
+        intent.putExtra("KEY_MARKER_RETURN", message);
+        setResult(RESULT_OK, intent);
+        finish();
+
+        super.onBackPressed();
     }
 }
